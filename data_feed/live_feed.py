@@ -1,11 +1,17 @@
 import websocket
 import json
 from datetime import datetime
-from core.config import BINANCE_API_KEY, BINANCE_API_SECRET, SYMBOL, INTERVAL, MARKET_TYPE, USE_TESTNET
 import threading
+# import sys
+# sys.path.append("..")  # to access core and data_feed
+from core.config import SYMBOL, INTERVAL, MARKET_TYPE, USE_TESTNET
+from data_feed import candle_store  # import our candle builder
+# Add at the top
+from core.config import REDIS_HOST, REDIS_PORT
+import redis
 
+r = redis.Redis(host=REDIS_HOST, port=REDIS_PORT, db=0)
 # ---------------- WebSocket URL ----------------
-USE_TESTNET = True
 if USE_TESTNET:
     if MARKET_TYPE == "spot":
         WS_URL = "wss://stream.testnet.binance.vision/ws"
@@ -20,14 +26,62 @@ else:
 STREAM_NAME = f"{SYMBOL.lower()}@kline_{INTERVAL}"
 
 # ---------------- Callbacks ----------------
+# def on_message(ws, message):
+#     data = json.loads(message)
+#     if 'e' in data and data['e'] == 'kline':
+#         k = data['k']
+#         ts = datetime.fromtimestamp(k['t']/1000)
+#         open_price = float(k['o'])
+#         close_price = float(k['c'])
+#         # print(f"[{ts}] {SYMBOL} | O:{open_price} C:{close_price}")
+#         volume = float(k['v'])
+
+#         # Build tick dict
+#         tick = {
+#             "timestamp": ts,
+#             "price": close_price,
+#             "volume": volume
+#         }
+#          # Send tick to candle_store
+#         candle_store.update_candle(tick)
+
+#         # Optional: print live tick / candle info
+#         last_candle = candle_store.get_last_candle()
+#         if last_candle:
+#             print(f"[{last_candle['timestamp']}] O:{last_candle['open']} H:{last_candle['high']} L:{last_candle['low']} C:{last_candle['close']} V:{last_candle['volume']}")
+
+
+
+
+
+# ---------------- Modify on_message ----------------
 def on_message(ws, message):
     data = json.loads(message)
     if 'e' in data and data['e'] == 'kline':
         k = data['k']
         ts = datetime.fromtimestamp(k['t']/1000)
-        open_price = float(k['o'])
         close_price = float(k['c'])
-        print(f"[{ts}] {SYMBOL} | O:{open_price} C:{close_price}")
+        volume = float(k['v'])
+
+        tick = {
+            "timestamp": ts,
+            "price": close_price,
+            "volume": volume
+        }
+
+        # Update candle
+        candle_store.update_candle(tick)
+
+        # ---------------- Save latest LTP in Redis ----------------
+        r.set(f"LTP:{SYMBOL}", close_price)
+
+        # Optional: print live candle info
+        last_candle = candle_store.get_last_candle()
+        if last_candle:
+            print(f"[{last_candle['timestamp']}] O:{last_candle['open']} H:{last_candle['high']} L:{last_candle['low']} C:{last_candle['close']} V:{last_candle['volume']}")
+
+
+
 
 def on_error(ws, error):
     print(f"WebSocket Error: {error}")
@@ -53,6 +107,6 @@ def start_ws():
     ws_thread.start()
     ws_thread.join()
 
-# For testing
+# ---------------- Test ----------------
 if __name__ == "__main__":
     start_ws()
