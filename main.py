@@ -33,50 +33,144 @@
 
 
 
-import threading
-import time
+# import threading
+# import time
+# from data_feed import live_feed, candle_store
+# from strategy.strategy_engine import StrategyEngine
+# from trading import order_manager
+# # from core.logger import logger  # optional, if you want async logging
+
+# # ---------------- Strategy Engine ----------------
+# engine = StrategyEngine()
+
+# def strategy_loop():
+#     """
+#     Continuously check for new candles and generate signals.
+#     """
+#     last_signal_time = None
+
+#     while True:
+#         last_candle = candle_store.get_last_candle()
+#         if last_candle:
+#             # Ensure we only run once per new candle
+#             if last_signal_time != last_candle['timestamp']:
+#                 last_signal_time = last_candle['timestamp']
+#                 signals = engine.run()
+#                 if signals:
+#                     for strat, sig in signals.items():
+#                         if sig in ["BUY", "SELL"]:
+#                             price = last_candle['close']
+#                             order_manager.place_order("BTCUSDT", sig, price)
+#         time.sleep(0.5)  # check twice per second for new candle
+
+# # ---------------- Start Live Feed ----------------
+# ws_thread = threading.Thread(target=live_feed.start_ws)
+# ws_thread.daemon = True
+# ws_thread.start()
+
+# # ---------------- Start Strategy Loop ----------------
+# strategy_thread = threading.Thread(target=strategy_loop)
+# strategy_thread.daemon = True
+# strategy_thread.start()
+
+# # ---------------- Keep Main Alive ----------------
+# try:
+#     while True:
+#         time.sleep(1)
+# except KeyboardInterrupt:
+#     print("\nShutting down trading system...")
+#     # logger.info("Trading system stopped by user.")
+
+
+
+
+# import threading, time
+# from data_feed import live_feed, candle_store
+# from strategy.strategy_engine import StrategyEngine
+# from trading import order_manager
+# from core.config import SYMBOLS, MARKET_TYPES
+
+# engine = StrategyEngine()
+
+# # Start WebSocket for all symbols
+# threads = []
+# for sym, mtype in zip(SYMBOLS, MARKET_TYPES):
+#     t = live_feed.start_ws(sym, mtype)
+#     threads.append(t)
+
+# # Strategy Loop
+# def strategy_loop():
+#     last_signal_times = {sym: None for sym in SYMBOLS}
+#     while True:
+#         signals = engine.run()
+#         for (sym, strat), sig in signals.items():
+#             candle = candle_store.get_last_candle(sym)
+#             if candle and last_signal_times[sym] != candle['timestamp']:
+#                 last_signal_times[sym] = candle['timestamp']
+#                 if sig in ["BUY", "SELL"]:
+#                     price = candle['close']
+#                     mtype = MARKET_TYPES[SYMBOLS.index(sym)]
+#                     order_manager.place_order(sym, sig, price, mtype)
+#         time.sleep(0.5)
+
+# strategy_thread = threading.Thread(target=strategy_loop)
+# strategy_thread.daemon = True
+# strategy_thread.start()
+
+# try:
+#     while True:
+#         time.sleep(1)
+# except KeyboardInterrupt:
+#     print("Shutting down trading system...")
+
+
+
+
+
+
+
+
+import threading, time
 from data_feed import live_feed, candle_store
 from strategy.strategy_engine import StrategyEngine
 from trading import order_manager
-# from core.logger import logger  # optional, if you want async logging
+from core.config import SYMBOLS, MARKET_TYPES
 
-# ---------------- Strategy Engine ----------------
 engine = StrategyEngine()
 
+# Start WebSocket for all symbols
+threads = []
+for sym, mtype in zip(SYMBOLS, MARKET_TYPES):
+    t = live_feed.start_ws(sym, mtype)
+    threads.append(t)
+from core.logger import get_logger
+logger = get_logger()
+
+logger.info("Starting trading system...")
+
+# logger.error(f"Error placing order: {e}")
+
+
+
+# Strategy Loop
 def strategy_loop():
-    """
-    Continuously check for new candles and generate signals.
-    """
-    last_signal_time = None
-
+    last_signal_times = {sym: None for sym in SYMBOLS}
     while True:
-        last_candle = candle_store.get_last_candle()
-        if last_candle:
-            # Ensure we only run once per new candle
-            if last_signal_time != last_candle['timestamp']:
-                last_signal_time = last_candle['timestamp']
-                signals = engine.run()
-                if signals:
-                    for strat, sig in signals.items():
-                        if sig in ["BUY", "SELL"]:
-                            price = last_candle['close']
-                            order_manager.place_order("BTCUSDT", sig, price)
-        time.sleep(0.5)  # check twice per second for new candle
-
-# ---------------- Start Live Feed ----------------
-ws_thread = threading.Thread(target=live_feed.start_ws)
-ws_thread.daemon = True
-ws_thread.start()
-
-# ---------------- Start Strategy Loop ----------------
+        signals = engine.run()
+        for (sym, strat), sig in signals.items():
+            candle = candle_store.get_last_candle(sym)
+            if candle and last_signal_times[sym] != candle['timestamp']:
+                last_signal_times[sym] = candle['timestamp']
+                if sig in ["BUY", "SELL"]:
+                    price = candle['close']
+                    mtype = MARKET_TYPES[SYMBOLS.index(sym)]
+                    logger.info(f"Signal: {sig} | Symbol: {sym} | Candle Close: {price}")
+                    order_manager.place_order(sym, sig, price, mtype, strategy=strat)
+        time.sleep(1)
 strategy_thread = threading.Thread(target=strategy_loop)
 strategy_thread.daemon = True
 strategy_thread.start()
 
-# ---------------- Keep Main Alive ----------------
-try:
-    while True:
-        time.sleep(1)
-except KeyboardInterrupt:
-    print("\nShutting down trading system...")
-    # logger.info("Trading system stopped by user.")
+# Keep main alive
+while True:
+    time.sleep(10)
