@@ -7,6 +7,9 @@ from core.logger import get_logger
 
 logger = get_logger()
 
+import redis
+from core.config import REDIS_HOST, REDIS_PORT
+
 class StrategyEngine:
     """
     Strategy Engine - manages multiple strategies
@@ -26,6 +29,7 @@ class StrategyEngine:
         """
         self.strategy_type = strategy_type
         self.strategies = {}
+        self.redis = redis.Redis(host=REDIS_HOST, port=REDIS_PORT, db=0)
         
         # Initialize strategies for each symbol
         for sym in SYMBOLS:
@@ -45,7 +49,7 @@ class StrategyEngine:
     
     def run(self):
         """
-        Run all strategies and collect signals
+        Run all strategies and collect signals. Also stores signals in Redis for position tracking.
         
         Returns:
             dict: {(symbol, strategy_name): signal}

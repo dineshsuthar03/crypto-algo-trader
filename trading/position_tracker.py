@@ -4,7 +4,11 @@ import time
 from datetime import datetime
 from core.config import (
     REDIS_HOST, REDIS_PORT, REFRESH_INTERVAL,
-    TARGET_PERCENT, STOPLOSS_PERCENT, MAX_HOLD_TIME_SEC
+    TARGET_PERCENT, STOPLOSS_PERCENT, MAX_HOLD_TIME_SEC,
+    EXIT_STRATEGY_SIGNAL_PRIORITY, EXIT_TARGET_PRIORITY,
+    EXIT_STOPLOSS_PRIORITY, EXIT_TIME_PRIORITY,
+    EXIT_STRATEGY_SIGNAL_ENABLE, EXIT_TARGET_ENABLE,
+    EXIT_STOPLOSS_ENABLE, EXIT_TIME_ENABLE
 )
 from trading.order_utils import calculate_pnl, format_price
 from storage.mongo_handler import log_trade
@@ -91,20 +95,56 @@ class PositionTracker:
                 
                 elapsed = (datetime.now() - pos.open_time).seconds
                 
-                # Check exit conditions
+                # Initialize exit reason as None
                 exit_reason = None
+                exit_conditions = []
                 
-                if pnl_percent >= TARGET_PERCENT:
-                    exit_reason = "TARGET"
-                    logger.info(f"🎯 Target hit! {pos.symbol} | PnL: {pnl_percent:.2f}% ({pnl_usdt:.2f} USDT)")
+                try:
+                    # 1. Check strategy signal
+                    if EXIT_STRATEGY_SIGNAL_ENABLE:
+                        signal_key = f"SIGNAL:{pos.symbol}:{pos.strategy}"
+                        signal_bytes = r.get(signal_key)
+                        if signal_bytes and signal_bytes.decode() == "SELL" and pos.side.upper() == "BUY":
+                            exit_conditions.append({
+                                'reason': "STRATEGY_SIGNAL",
+                                'priority': EXIT_STRATEGY_SIGNAL_PRIORITY,
+                                'message': f"Strategy SELL signal! {pos.symbol} | PnL: {pnl_percent:.2f}% ({pnl_usdt:.2f} USDT)"
+                            })
                     
-                elif pnl_percent <= -STOPLOSS_PERCENT:
-                    exit_reason = "STOPLOSS"
-                    logger.warning(f" Stoploss hit! {pos.symbol} | PnL: {pnl_percent:.2f}% ({pnl_usdt:.2f} USDT)")
+                    # 2. Check target
+                    if EXIT_TARGET_ENABLE and pnl_percent >= TARGET_PERCENT:
+                        exit_conditions.append({
+                            'reason': "TARGET",
+                            'priority': EXIT_TARGET_PRIORITY,
+                            'message': f"🎯 Target hit! {pos.symbol} | PnL: {pnl_percent:.2f}% ({pnl_usdt:.2f} USDT)"
+                        })
                     
-                elif elapsed >= MAX_HOLD_TIME_SEC:
-                    exit_reason = "TIME_EXIT"
-                    logger.info(f" Time exit! {pos.symbol} | PnL: {pnl_percent:.2f}% ({pnl_usdt:.2f} USDT)")
+                    # 3. Check stop loss
+                    if EXIT_STOPLOSS_ENABLE and pnl_percent <= -STOPLOSS_PERCENT:
+                        exit_conditions.append({
+                            'reason': "STOPLOSS",
+                            'priority': EXIT_STOPLOSS_PRIORITY,
+                            'message': f"Stop loss hit! {pos.symbol} | PnL: {pnl_percent:.2f}% ({pnl_usdt:.2f} USDT)"
+                        })
+                    
+                    # 4. Check time exit
+                    if EXIT_TIME_ENABLE and elapsed >= MAX_HOLD_TIME_SEC:
+                        exit_conditions.append({
+                            'reason': "TIME_EXIT",
+                            'priority': EXIT_TIME_PRIORITY,
+                            'message': f"Time exit! {pos.symbol} | PnL: {pnl_percent:.2f}% ({pnl_usdt:.2f} USDT)"
+                        })
+                    
+                    # Sort by priority and take the highest priority exit condition
+                    if exit_conditions:
+                        exit_conditions.sort(key=lambda x: x['priority'])
+                        chosen_exit = exit_conditions[0]
+                        exit_reason = chosen_exit['reason']
+                        logger.info(chosen_exit['message'])
+                
+                except Exception as e:
+                    logger.error(f"Error checking exit conditions: {str(e)}", exc_info=True)
+                    # Keep exit_reason as None if there's an error
                 
                 # Exit position if condition met
                 if exit_reason:

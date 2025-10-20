@@ -28,6 +28,18 @@ STOPLOSS_PERCENT = float(os.getenv("STOPLOSS_PERCENT"))
 MAX_HOLD_TIME_SEC = int(os.getenv("MAX_HOLD_TIME_SEC"))
 REFRESH_INTERVAL = int(os.getenv("REFRESH_INTERVAL"))
 
+# Exit Strategy Configuration
+EXIT_STRATEGY_SIGNAL_PRIORITY = int(os.getenv("EXIT_STRATEGY_SIGNAL_PRIORITY", "1"))
+EXIT_TARGET_PRIORITY = int(os.getenv("EXIT_TARGET_PRIORITY", "2"))
+EXIT_STOPLOSS_PRIORITY = int(os.getenv("EXIT_STOPLOSS_PRIORITY", "3"))
+EXIT_TIME_PRIORITY = int(os.getenv("EXIT_TIME_PRIORITY", "4"))
+
+# Exit Strategy Enable/Disable
+EXIT_STRATEGY_SIGNAL_ENABLE = os.getenv("EXIT_STRATEGY_SIGNAL_ENABLE", "true").lower() == "true"
+EXIT_TARGET_ENABLE = os.getenv("EXIT_TARGET_ENABLE", "true").lower() == "true"
+EXIT_STOPLOSS_ENABLE = os.getenv("EXIT_STOPLOSS_ENABLE", "true").lower() == "true"
+EXIT_TIME_ENABLE = os.getenv("EXIT_TIME_ENABLE", "true").lower() == "true"
+
 # Trading Parameters
 TRADE_AMOUNT_USDT = float(os.getenv("TRADE_AMOUNT_USDT", "20"))  # Amount in USDT per trade
 MIN_NOTIONAL = float(os.getenv("MIN_NOTIONAL", "10"))  # Binance minimum notional

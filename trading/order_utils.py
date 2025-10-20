@@ -24,19 +24,49 @@ def calculate_quantity(symbol, price, market_type="spot", trade_amount=None, sid
     - Trading side (BUY/SELL)
     
     Returns: (quantity, notional_value, estimated_fee)
+    Raises:
+        ValueError: If any input parameters are invalid
     """
-    if trade_amount is None:
-        trade_amount = TRADE_AMOUNT_USDT
+    logger.debug(f"Calculating quantity for order: {side} {symbol} @ {price} ({market_type})")
     
-    # Get commission rate
-    commission_rate = SPOT_COMMISSION_RATE if market_type == "spot" else FUTURES_COMMISSION_RATE
+    try:
+        # Input validation
+        if not symbol or not isinstance(symbol, str):
+            raise ValueError(f"Invalid symbol: {symbol}")
+        if not price or float(price) <= 0:
+            raise ValueError(f"Invalid price: {price}")
+        if market_type not in ["spot", "futures"]:
+            raise ValueError(f"Invalid market type: {market_type}")
+        if side.upper() not in ["BUY", "SELL"]:
+            raise ValueError(f"Invalid side: {side}")
+            
+        if trade_amount is None:
+            trade_amount = TRADE_AMOUNT_USDT
+            logger.debug(f"Using default trade amount: {TRADE_AMOUNT_USDT} USDT")
+        else:
+            logger.debug(f"Using provided trade amount: {trade_amount} USDT")
     
-    # Calculate base quantity (before fees)
-    base_quantity = trade_amount / price
+        # Get commission rate
+        commission_rate = SPOT_COMMISSION_RATE if market_type == "spot" else FUTURES_COMMISSION_RATE
+        logger.debug(f"Commission rate: {commission_rate*100:.3f}%")
+    
+        # Ensure values are float
+        trade_amount = float(trade_amount)
+        price = float(price)
+        
+        # Calculate base quantity (before fees)
+        base_quantity = trade_amount / price
+        logger.debug(f"Base quantity (before fees): {base_quantity:.8f}")
+    except ValueError as e:
+        logger.error(f"Parameter validation error in calculate_quantity: {str(e)}")
+        raise
+    except Exception as e:
+        logger.error(f"Unexpected error in calculate_quantity: {str(e)}")
+        raise
     
     # For spot SELL orders, reduce quantity to account for fees
     if market_type == "spot" and side.upper() == "SELL":
-        fee_reduction = commission_rate * 1.1  # Add 10% margin for safety
+        fee_reduction = float(commission_rate) * 1.1  # Add 10% margin for safety
         base_quantity = base_quantity * (1 - fee_reduction)
     
     # Calculate quantity precision
