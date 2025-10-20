@@ -1,109 +1,145 @@
-# # TODO: Implement this module
-# from datetime import datetime
-# from trading.position_tracker import PositionTracker
-
-# # Initialize global position tracker
-# tracker = PositionTracker()
-
-# def place_order(symbol, side, price):
-#     """
-#     Mock order placement
-#     """
-#     print(f"[{datetime.now().strftime('%H:%M:%S')}] {side.upper()} ORDER | {symbol} @ {price}")
-#     tracker.open_position(symbol, side, price)
-
-
-
-# from trading.position_tracker import tracker
-# from core.config import BINANCE_API_KEY, BINANCE_API_SECRET
-# from binance.client import Client
-
-# client = Client(BINANCE_API_KEY, BINANCE_API_SECRET)
-
-# def place_order(symbol, side, price, market_type, strategy="Breakout"):
-#     print(f"Placing {market_type.upper()} {side.upper()} order | {symbol} @ {price}")
-#     tracker.open_position(symbol, side, price, market_type)
-    
-#     # ---------------- Example REST API call (mock) ----------------
-#     try:
-#         if market_type == "spot":
-#             order = client.create_order(
-#                 symbol=symbol,
-#                 side=side.upper(),
-#                 type="MARKET",
-#                 quantity=0.001  # replace with dynamic qty calculation
-#             )
-#         else:
-#             # Futures order
-#             order = client.futures_create_order(
-#                 symbol=symbol,
-#                 side=side.upper(),
-#                 type="MARKET",
-#                 quantity=0.001
-#             )
-#         print(" Binance Order Executed:", order)
-#     except Exception as e:
-#         print(" Binance Order Error:", e)
-
-
-
 from trading.position_tracker import tracker
-from core.config import BINANCE_API_KEY, BINANCE_API_SECRET,USE_TESTNET
-from binance.enums import SIDE_BUY, SIDE_SELL, ORDER_TYPE_MARKET
+from trading.order_utils import calculate_quantity, validate_order, format_price
+from core.config import (
+    BINANCE_API_KEY, BINANCE_API_SECRET, USE_TESTNET,
+    MAX_POSITIONS_PER_SYMBOL
+)
 from binance.client import Client
+from binance.exceptions import BinanceAPIException
 from core.logger import get_logger
+
 logger = get_logger()
 
+# Initialize Binance client
+client = Client(BINANCE_API_KEY, BINANCE_API_SECRET, testnet=USE_TESTNET)
 
 
-client = Client(BINANCE_API_KEY, BINANCE_API_SECRET)
-if USE_TESTNET:
-    client.FUTURES_URL = 'https://testnet.binancefuture.com/fapi'
-def place_order(symbol, side, price, market_type, strategy="Breakout"):
-    logger.info(f"Placing {market_type.upper()} {side.upper()} order | {symbol} @ {price}")
-    tracker.open_position(symbol, side, price, market_type, strategy)
+def get_symbol_info(symbol, market_type="spot"):
+    """Get symbol trading rules from exchange"""
     try:
+        if market_type == "spot":
+            info = client.get_symbol_info(symbol)
+        else:
+            info = client.futures_exchange_info()
+            info = next((s for s in info['symbols'] if s['symbol'] == symbol), None)
+        return info
+    except Exception as e:
+        logger.error(f"Error getting symbol info: {e}")
+        return None
+
+
+def place_order(symbol, side, price, market_type, strategy="Breakout"):
+    """
+    Place order with proper quantity calculation and fee handling
+    """
+    
+    # Check position limits and spot trading rules
+    open_positions = [p for p in tracker.positions if p.symbol == symbol and not p.closed]
+    
+    if market_type == "spot":
+        # For spot trading:
+        # - BUY is allowed only if we have no open positions
+        # - SELL is allowed only if we have a BUY position
+        if side.upper() == "BUY" and len(open_positions) > 0:
+            logger.warning(f"Already have an open position for {symbol}. Skipping BUY order.")
+            return None
+        elif side.upper() == "SELL":
+            # Check if we have a BUY position to sell
+            buy_positions = [p for p in open_positions if p.side.upper() == "BUY"]
+            if not buy_positions:
+                logger.warning(f"No BUY position found for {symbol}. Cannot place SELL order in spot trading.")
+                return None
+    else:
+        # For futures trading, use standard position limit
+        if len(open_positions) >= MAX_POSITIONS_PER_SYMBOL:
+            logger.warning(f"Max positions reached for {symbol}. Skipping order.")
+            return None
+    
+    try:
+        # Calculate proper quantity
+        quantity, notional, estimated_fee = calculate_quantity(symbol, price, market_type)
+        
+        # Validate order
+        is_valid, error_msg = validate_order(symbol, quantity, price, market_type)
+        if not is_valid:
+            logger.error(f"Order validation failed: {error_msg}")
+            return None
+        
+        logger.info(f"Placing {market_type.upper()} {side.upper()} order | {symbol} @ {price}")
+        logger.info(f"Quantity: {quantity} | Notional: {notional:.2f} USDT | Est. Fee: {estimated_fee:.4f} USDT")
+        
+        # Open position in tracker first
+        tracker.open_position(symbol, side, price, market_type, strategy, quantity, estimated_fee)
+        
+        # Place actual order on exchange
         if market_type == "spot":
             order = client.create_order(
                 symbol=symbol,
                 side=side.upper(),
                 type="MARKET",
-                quantity=0.001
+                quantity=quantity
             )
         else:
+            # For futures
             order = client.futures_create_order(
                 symbol=symbol,
                 side=side.upper(),
                 type="MARKET",
-                quantity=0.001
+                quantity=quantity
             )
-        logger.info(f" Binance Order Executed: {order}")
-        logger.info(f" Binance Order Executed: ")
+        
+        logger.info(f" Order executed | OrderId: {order.get('orderId')} | Status: {order.get('status')}")
+        
+        # Update position with actual fill price if available
+        fills = order.get('fills', [])
+        if fills:
+            avg_price = sum(float(f['price']) * float(f['qty']) for f in fills) / sum(float(f['qty']) for f in fills)
+            actual_fee = sum(float(f['commission']) for f in fills)
+            logger.info(f"Avg Fill Price: {avg_price:.8f} | Actual Fee: {actual_fee:.8f}")
+        
+        return order
+        
+    except BinanceAPIException as e:
+        logger.error(f"Binance API Error: {e.status_code} - {e.message}")
+        return None
     except Exception as e:
-        logger.error(f" Binance Order Error: {e}")
+        logger.error(f"Order placement error: {str(e)}", exc_info=True)
+        return None
 
 
-
-
-
-# # ...existing code...
-# from core.logger import get_logger
-# logger = get_logger()
-
-# # confirm module load
-# logger.info("order_manager module loaded")
-# # confirm module load
-# logger.info("order_manager module loaded")
-# print("order_manager module loaded (print) ->", __file__)
-
-# # ...existing code...
-# def place_order(symbol, side, price, market_type, strategy="Breakout"):
-#     logger.info(f"place_order called -> symbol={symbol} side={side} price={price} market_type={market_type} strategy={strategy}")
-#     tracker.open_position(symbol, side, price, market_type, strategy)
-#     try:
-#         logger.debug("About to send order to Binance client (mocked)")
-#         # ...existing code...
-#         logger.info(f" Binance Order Executed: ")
-#     except Exception as e:
-#         logger.exception(f" Binance Order Error: {e}")
-# # ...existing code...
+def close_position(position, exit_price, reason):
+    """
+    Close position with market order
+    """
+    try:
+        symbol = position.symbol
+        quantity = position.quantity
+        market_type = position.market_type
+        
+        # Determine close side (opposite of entry)
+        close_side = "SELL" if position.side.upper() == "BUY" else "BUY"
+        
+        logger.info(f"Closing position | {symbol} | {close_side} {quantity} @ {exit_price}")
+        
+        # Place closing order
+        if market_type == "spot":
+            order = client.create_order(
+                symbol=symbol,
+                side=close_side,
+                type="MARKET",
+                quantity=quantity
+            )
+        else:
+            order = client.futures_create_order(
+                symbol=symbol,
+                side=close_side,
+                type="MARKET",
+                quantity=quantity
+            )
+        
+        logger.info(f" Position closed | Reason: {reason} | OrderId: {order.get('orderId')}")
+        return order
+        
+    except Exception as e:
+        logger.error(f"Error closing position: {str(e)}", exc_info=True)
+        return None

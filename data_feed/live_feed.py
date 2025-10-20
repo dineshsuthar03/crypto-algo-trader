@@ -171,6 +171,7 @@ def start_ws(symbol, market_type):
         data = json.loads(message)
         if 'e' in data and data['e'] == 'kline':
             k = data['k']
+            # print(k)
             ts = datetime.fromtimestamp(k['t']/1000)
             close_price = float(k['c'])
             volume = float(k['v'])
@@ -178,6 +179,7 @@ def start_ws(symbol, market_type):
             tick = {"timestamp": ts, "price": close_price, "volume": volume}
             candle_store.update_candle(tick, symbol)
             r.set(f"LTP:{symbol}", close_price)
+            # print(f"[{symbol}] [{ts}] O:{k['o']} H:{k['h']} L:{k['l']} C:{k['c']} V:{k['v']}")
 
     ws = websocket.WebSocketApp(ws_url, on_message=on_message)
     t = threading.Thread(target=ws.run_forever, kwargs={'ping_interval':20, 'ping_timeout':10})
