@@ -48,6 +48,29 @@ FUTURES_COMMISSION_RATE = float(os.getenv("FUTURES_COMMISSION_RATE", "0.0004")) 
 
 # Position Management
 MAX_POSITIONS_PER_SYMBOL = int(os.getenv("MAX_POSITIONS_PER_SYMBOL", "1"))
+
+# Advanced Trade Management
+ENABLE_TRAILING_STOP = os.getenv("ENABLE_TRAILING_STOP", "true").lower() == "true"
+ENABLE_DYNAMIC_TARGETS = os.getenv("ENABLE_DYNAMIC_TARGETS", "true").lower() == "true"
+ENABLE_VOLATILITY_ADJUSTMENT = os.getenv("ENABLE_VOLATILITY_ADJUSTMENT", "true").lower() == "true"
+
+# Volatility Indicators
+ATR_PERIOD = int(os.getenv("ATR_PERIOD", "14"))
+BOLLINGER_PERIOD = int(os.getenv("BOLLINGER_PERIOD", "20"))
+BOLLINGER_STD = float(os.getenv("BOLLINGER_STD", "2.0"))
+VOLATILITY_WINDOW = int(os.getenv("VOLATILITY_WINDOW", "20"))
+VOLATILITY_STD_MULTIPLIER = float(os.getenv("VOLATILITY_STD_MULTIPLIER", "2.5"))
+
+# Stop Loss Configuration
+TRAILING_STOP_TYPE = os.getenv("TRAILING_STOP_TYPE", "atr")  # 'fixed', 'atr', or 'percent'
+TRAILING_STOP_VALUE = float(os.getenv("TRAILING_STOP_VALUE", "2.0"))  # ATR multiplier or fixed percentage
+TRAILING_ACTIVATION_PCT = float(os.getenv("TRAILING_ACTIVATION_PCT", "0.01"))  # 1% price move to activate
+
+# Take Profit Configuration
+PROFIT_TAKING_TYPE = os.getenv("PROFIT_TAKING_TYPE", "dynamic")  # 'fixed' or 'dynamic'
+MIN_PROFIT_MULTIPLIER = float(os.getenv("MIN_PROFIT_MULTIPLIER", "1.5"))
+MAX_PROFIT_MULTIPLIER = float(os.getenv("MAX_PROFIT_MULTIPLIER", "3.0"))
+MAX_DRAWDOWN_PCT = float(os.getenv("MAX_DRAWDOWN_PCT", "0.05"))  # 5% maximum drawdown
 ENABLE_SCALING = os.getenv("ENABLE_SCALING", "false").lower() == "true"
 
 # Price Precision (for different coins)

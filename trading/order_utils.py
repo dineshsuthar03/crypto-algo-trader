@@ -22,11 +22,34 @@ def calculate_quantity(symbol, price, market_type="spot", trade_amount=None, sid
     - Transaction fees
     - Symbol precision
     - Trading side (BUY/SELL)
+    - Symbol specific precision and minimums
     
     Returns: (quantity, notional_value, estimated_fee)
     Raises:
         ValueError: If any input parameters are invalid
     """
+    
+    # Symbol-specific settings
+    SYMBOL_SETTINGS = {
+        "BTCUSDT": {
+            "min_qty": 0.0001,      # Minimum quantity
+            "precision": 5,          # Decimal places for quantity
+            "min_notional": 5.0,     # Minimum order value in USDT
+            "step_size": 0.0001     # Quantity step size
+        },
+        "ETHUSDT": {
+            "min_qty": 0.001,
+            "precision": 3,
+            "min_notional": 5.0,
+            "step_size": 0.001
+        },
+        "DOGEUSDT": {
+            "min_qty": 1.0,
+            "precision": 0,
+            "min_notional": 5.0,
+            "step_size": 1.0
+        }
+    }
     logger.debug(f"Calculating quantity for order: {side} {symbol} @ {price} ({market_type})")
     
     try:
@@ -78,8 +101,34 @@ def calculate_quantity(symbol, price, market_type="spot", trade_amount=None, sid
     else:
         quantity = round(base_quantity, qty_precision)
     
+    # Get symbol-specific settings
+    settings = SYMBOL_SETTINGS.get(symbol, {
+        "min_qty": 0.00001,
+        "precision": 5,
+        "min_notional": 5.0,
+        "step_size": 0.00001
+    })
+    
+    # Apply symbol-specific precision and minimums
+    quantity = max(
+        settings["min_qty"],
+        float("{:.8f}".format(quantity))  # Convert to proper decimal
+    )
+    
+    # Round to step size
+    step_size = settings["step_size"]
+    quantity = float("{:.8f}".format((quantity // step_size) * step_size))  # Ensure proper decimal format
+    quantity = float("{:.8f}".format(round(quantity, settings["precision"])))
+    
     # Calculate notional value
     notional = quantity * price
+    
+    # Ensure minimum notional
+    if notional < settings["min_notional"]:
+        quantity = (settings["min_notional"] / price) * 1.01  # Add 1% buffer
+        quantity = round(quantity, settings["precision"])
+        quantity = max(settings["min_qty"], quantity)
+        notional = quantity * price
     
     # Calculate estimated fee (for buying)
     estimated_fee = notional * commission_rate

@@ -34,6 +34,19 @@ class Position:
         self.pnl_usdt = None
         self.pnl_percent = None
         
+        # Trade management
+        from trading.trade_manager import TradeManager
+        self.trade_manager = TradeManager(
+            initial_price=entry_price,
+            side=side,
+            atr_period=14,
+            trailing_stop_multiplier=2.0,
+            min_profit_multiplier=1.5,
+            max_profit_multiplier=3.0
+        )
+        self.current_stop = None
+        self.current_target = None
+        
     def __repr__(self):
         return f"Position({self.symbol}, {self.side}, Entry: {self.entry_price}, Qty: {self.quantity})"
 
@@ -95,9 +108,40 @@ class PositionTracker:
                 
                 elapsed = (datetime.now() - pos.open_time).seconds
                 
+                # Get OHLC data from Redis for ATR calculation
+                ohlc_key = f"OHLC:{pos.symbol}"
+                ohlc_data = r.hgetall(ohlc_key)
+                if ohlc_data:
+                    current_high = float(ohlc_data.get(b'high', live_price))
+                    current_low = float(ohlc_data.get(b'low', live_price))
+                else:
+                    current_high = current_low = live_price
+                
+                # Update trade management levels
+                stop_level, target_level = pos.trade_manager.calculate_dynamic_levels(
+                    live_price, current_high, current_low
+                )
+                pos.current_stop = stop_level
+                pos.current_target = target_level
+                
+                # Check dynamic exit conditions
+                should_exit, dynamic_reason = pos.trade_manager.should_exit(live_price)
+                
                 # Initialize exit reason as None
-                exit_reason = None
+                exit_reason = dynamic_reason if should_exit else None
                 exit_conditions = []
+                
+                # Log current levels every 10 seconds
+                if elapsed % 10 == 0:
+                    logger.debug(
+                        f"Position: {pos.symbol} | "
+                        f"Entry: {pos.entry_price:.8f} | "
+                        f"Current: {live_price:.8f} | "
+                        f"Stop: {stop_level:.8f} | "
+                        f"Target: {target_level:.8f} | "
+                        f"PnL: {pnl_percent:.2f}% ({pnl_usdt:.2f} USDT) | "
+                        f"Time: {elapsed}s"
+                    )
                 
                 try:
                     # 1. Check strategy signal
@@ -173,6 +217,31 @@ class PositionTracker:
         if pos.closed:
             return
             
+        # For spot trading, execute the SELL order first
+        if pos.market_type == "spot" and pos.side.upper() == "BUY":
+            try:
+                # Import here to avoid circular import
+                from trading.order_manager import place_exchange_order
+                
+                # Place market SELL order
+                sell_response = place_exchange_order(
+                    symbol=pos.symbol,
+                    side="SELL",
+                    quantity=pos.quantity,
+                    price=exit_price,
+                    market_type="spot"
+                )
+                logger.info(f"SELL order executed: {sell_response['orderId']}")
+                
+                # Update exit price from actual execution
+                if 'fills' in sell_response:
+                    total_qty = sum(float(fill['qty']) for fill in sell_response['fills'])
+                    total_price = sum(float(fill['price']) * float(fill['qty']) for fill in sell_response['fills'])
+                    exit_price = total_price / total_qty if total_qty > 0 else exit_price
+            except Exception as e:
+                logger.error(f"Failed to execute SELL order: {str(e)}")
+                # Continue with position closing even if order fails
+        
         pos.closed = True
         pos.exit_price = exit_price
         

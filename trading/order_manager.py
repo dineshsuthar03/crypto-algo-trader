@@ -58,11 +58,13 @@ def place_exchange_order(symbol, side, quantity, price, market_type):
                     f"(step size: {step_size})")
         
         if market_type == "spot":
+            # Format quantity to avoid scientific notation
+            formatted_quantity = "{:.8f}".format(rounded_quantity).rstrip('0').rstrip('.')
             response = client.create_order(
                 symbol=symbol,
                 side=side,
                 type="MARKET",
-                quantity=rounded_quantity
+                quantity=formatted_quantity
             )
         else:
             response = client.futures_create_order(
