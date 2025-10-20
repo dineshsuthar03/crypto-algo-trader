@@ -15,12 +15,13 @@ def round_step_size(quantity, step_size=1.0):
     return round(quantity, precision)
 
 
-def calculate_quantity(symbol, price, market_type="spot", trade_amount=None):
+def calculate_quantity(symbol, price, market_type="spot", trade_amount=None, side="BUY"):
     """
     Calculate proper quantity for order considering:
     - Minimum notional value
     - Transaction fees
     - Symbol precision
+    - Trading side (BUY/SELL)
     
     Returns: (quantity, notional_value, estimated_fee)
     """
@@ -32,6 +33,11 @@ def calculate_quantity(symbol, price, market_type="spot", trade_amount=None):
     
     # Calculate base quantity (before fees)
     base_quantity = trade_amount / price
+    
+    # For spot SELL orders, reduce quantity to account for fees
+    if market_type == "spot" and side.upper() == "SELL":
+        fee_reduction = commission_rate * 1.1  # Add 10% margin for safety
+        base_quantity = base_quantity * (1 - fee_reduction)
     
     # Calculate quantity precision
     qty_precision = QUANTITY_PRECISION.get(symbol, 3)

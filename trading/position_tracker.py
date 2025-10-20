@@ -41,19 +41,30 @@ class PositionTracker:
     
     def open_position(self, symbol, side, price, market_type, strategy="Breakout", quantity=0, entry_fee=0):
         """Open a new position"""
-        pos = Position(symbol, side, price, market_type, strategy, quantity, entry_fee)
-        
         with self.lock:
+            # For spot trading, validate position state
+            if market_type == "spot":
+                open_positions = [p for p in self.positions if p.symbol == symbol and not p.closed]
+                if side.upper() == "BUY" and open_positions:
+                    logger.warning(f"Already have open position for {symbol}. Cannot open new BUY position.")
+                    return None
+                elif side.upper() == "SELL":
+                    buy_positions = [p for p in open_positions if p.side.upper() == "BUY"]
+                    if not buy_positions:
+                        logger.warning(f"No BUY position found for {symbol}. Cannot place SELL order.")
+                        return None
+
+            pos = Position(symbol, side, price, market_type, strategy, quantity, entry_fee)
             self.positions.append(pos)
-        
-        logger.info(f" Position opened: {pos}")
-        
-        # Start monitoring in separate thread
-        t = threading.Thread(target=self.monitor_position, args=(pos,))
-        t.daemon = True
-        t.start()
-        
-        return pos
+            
+            logger.info(f" Position opened: {pos}")
+            
+            # Start monitoring in separate thread
+            t = threading.Thread(target=self.monitor_position, args=(pos,))
+            t.daemon = True
+            t.start()
+            
+            return pos
     
     def monitor_position(self, pos):
         """Monitor position for exit conditions"""
@@ -93,7 +104,7 @@ class PositionTracker:
                     
                 elif elapsed >= MAX_HOLD_TIME_SEC:
                     exit_reason = "TIME_EXIT"
-                    logger.info(f"⏰ Time exit! {pos.symbol} | PnL: {pnl_percent:.2f}% ({pnl_usdt:.2f} USDT)")
+                    logger.info(f" Time exit! {pos.symbol} | PnL: {pnl_percent:.2f}% ({pnl_usdt:.2f} USDT)")
                 
                 # Exit position if condition met
                 if exit_reason:
@@ -124,6 +135,17 @@ class PositionTracker:
             
         pos.closed = True
         pos.exit_price = exit_price
+        
+        # Account for fees in final PnL calculation
+        if pos.market_type == "spot":
+            # For spot trading, both entry and exit have fees
+            total_fees = (pos.entry_fee or 0) + (total_fees or 0)
+            # Adjust PnL for total fees
+            pnl_usdt = pnl_usdt - total_fees
+            # Recalculate percentage including fees
+            initial_value = pos.quantity * pos.entry_price
+            pnl_percent = (pnl_usdt / initial_value) * 100 if initial_value > 0 else 0
+            
         pos.pnl_usdt = pnl_usdt
         pos.pnl_percent = pnl_percent
         
@@ -169,12 +191,37 @@ class PositionTracker:
         except Exception as e:
             logger.error(f"Error logging trade to MongoDB: {str(e)}")
     
-    def get_open_positions(self, symbol=None):
-        """Get all open positions, optionally filtered by symbol"""
+    def get_open_positions(self, symbol=None, side=None):
+        """Get all open positions, optionally filtered by symbol and side"""
         with self.lock:
+            positions = [p for p in self.positions if not p.closed]
             if symbol:
-                return [p for p in self.positions if not p.closed and p.symbol == symbol]
-            return [p for p in self.positions if not p.closed]
+                positions = [p for p in positions if p.symbol == symbol]
+            if side:
+                positions = [p for p in positions if p.side.upper() == side.upper()]
+            return positions
+            
+    def cleanup_duplicate_positions(self):
+        """Clean up any duplicate open positions"""
+        with self.lock:
+            # Group open positions by symbol
+            symbol_positions = {}
+            for pos in self.positions:
+                if not pos.closed:
+                    if pos.symbol not in symbol_positions:
+                        symbol_positions[pos.symbol] = []
+                    symbol_positions[pos.symbol].append(pos)
+            
+            # Keep only the most recent position if duplicates exist
+            for symbol, positions in symbol_positions.items():
+                if len(positions) > 1:
+                    logger.warning(f"Found {len(positions)} open positions for {symbol}. Cleaning up duplicates.")
+                    # Sort by open time, newest first
+                    positions.sort(key=lambda x: x.open_time, reverse=True)
+                    # Close all but the most recent
+                    for pos in positions[1:]:
+                        pos.closed = True
+                        logger.info(f"Closed duplicate position: {pos}")
     
     def get_position_summary(self):
         """Get summary of all positions"""

@@ -73,12 +73,36 @@ def place_order(symbol, side, price, market_type, strategy="Breakout"):
         
         # Place actual order on exchange
         if market_type == "spot":
-            order = client.create_order(
-                symbol=symbol,
-                side=side.upper(),
-                type="MARKET",
-                quantity=quantity
-            )
+            try:
+                # For spot trading, ensure quantity precision matches exchange rules
+                info = get_symbol_info(symbol, "spot")
+                if info:
+                    lot_size_filter = next(f for f in info['filters'] if f['filterType'] == 'LOT_SIZE')
+                    step_size = float(lot_size_filter['stepSize'])
+                    
+                    if side.upper() == "SELL":
+                        # For selling, reduce quantity to account for fees
+                        # Binance spot fee is typically 0.1% (0.001)
+                        fee_adjustment = 0.001  # SPOT_COMMISSION_RATE from config
+                        quantity = float(quantity) * (1 - fee_adjustment)  # Reduce quantity by fee percentage
+                    
+                    # Round quantity to valid step size
+                    quantity = float(quantity)
+                    quantity = round(quantity - (quantity % step_size), len(str(step_size).split('.')[1]))
+                
+                order = client.create_order(
+                    symbol=symbol,
+                    side=side.upper(),
+                    type="MARKET",
+                    quantity=quantity
+                )
+            except BinanceAPIException as e:
+                if "insufficient balance" in str(e).lower():
+                    logger.error(f"Insufficient balance for {side} order. Required quantity: {quantity}")
+                    # Remove position from tracker if it was a failed order
+                    if side.upper() == "BUY":
+                        tracker.positions.pop()  # Remove last added position
+                raise
         else:
             # For futures
             order = client.futures_create_order(
