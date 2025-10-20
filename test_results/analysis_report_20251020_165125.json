@@ -1,0 +1,24 @@
+{
+    "timestamp": "2025-10-20T16:51:25.156494",
+    "strategies": {
+        "candlestick": {
+            "metrics": {
+                "timeframes": {
+                    "1h": {
+                        "total_signals": 252,
+                        "signal_distribution": {
+                            "BEARISH": 95,
+                            "true": 86,
+                            "BULLISH": 71
+                        },
+                        "accuracy": 0.5,
+                        "patterns": {
+                            "engulfing": 166,
+                            "doji": 61,
+                            "hammer": 23,
+                            "three_black_crows": 1,
+                            "morning_star": 1
+                        },
+                        "best_params": null,
+                        "risk_metrics": {
+                            "max_consecutive_signals": 

@@ -1,0 +1,63 @@
+{
+    "timeframes": {
+        "1h": {
+            "signals": [
+                {
+                    "timestamp": 1758510000000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 114649.89,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758528000000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 112629.07,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758546000000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 113130.63,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758553200000,
+                    "pattern": "hammer",
+                    "signal": true,
+                    "price": 112815.5,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758560400000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 112398.66,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758564000000,
+                    "pattern": "doji",
+                    "signal": 

@@ -1,0 +1,2501 @@
+{
+    "timeframes": {
+        "1h": {
+            "signals": [
+                {
+                    "timestamp": 1758553200000,
+                    "signal": "BEARISH",
+                    "price": 112815.5,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1758556800000,
+                    "signal": "BEARISH",
+                    "price": 112600.68,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1758560400000,
+                    "signal": "BULLISH",
+                    "price": 112398.66,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1758567600000,
+                    "signal": "BULLISH",
+                    "price": 112122.9,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1758571200000,
+                    "signal": "BULLISH",
+                    "price": 112781.88,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1758578400000,
+                    "signal": "BULLISH",
+                    "price": 112643.25,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1758582000000,
+                    "signal": "BULLISH",
+                    "price": 112650.99,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1758585600000,
+                    "signal": "BULLISH",
+                    "price": 112395.32,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1758589200000,
+                    "signal": "BULLISH",
+                    "price": 112156.66,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1758592800000,
+                    "signal": "BULLISH",
+                    "price": 111811.88,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1758596400000,
+                    "signal": "BULLISH",
+                    "price": 112339.99,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1758603600000,
+                    "signal": "BULLISH",
+                    "price": 112665.44,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1758636000000,
+                    "signal": "BULLISH",
+                    "price": 112652.91,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1758639600000,
+                    "signal": "BULLISH",
+                    "price": 112882.19,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1758643200000,
+                    "signal": "BULLISH",
+                    "price": 112823.63,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1758646800000,
+                    "signal": "BULLISH",
+                    "price": 111957.76,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1758650400000,
+                    "signal": "BULLISH",
+                    "price": 111780.1,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1758679200000,
+                    "signal": "BEARISH",
+                    "price": 112111.62,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1758754800000,
+                    "signal": "BULLISH",
+                    "price": 113307.0,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1758758400000,
+                    "signal": "BULLISH",
+                    "price": 113062.35,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1758812400000,
+                    "signal": "BEARISH",
+                    "price": 111580.77,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1758852000000,
+                    "signal": "BEARISH",
+                    "price": 109621.7,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1758859200000,
+                    "signal": "BULLISH",
+                    "price": 109338.01,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1758866400000,
+                    "signal": "BULLISH",
+                    "price": 109360.0,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1758870000000,
+                    "signal": "BULLISH",
+                    "price": 109320.02,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1758880800000,
+                    "signal": "BULLISH",
+                    "price": 108895.0,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1758884400000,
+                    "signal": "BULLISH",
+                    "price": 109133.5,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1758888000000,
+                    "signal": "BULLISH",
+                    "price": 109372.68,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1758895200000,
+                    "signal": "BULLISH",
+                    "price": 108836.0,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1758898800000,
+                    "signal": "BULLISH",
+                    "price": 109027.78,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1758924000000,
+                    "signal": "BULLISH",
+                    "price": 109558.25,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1758934800000,
+                    "signal": "BULLISH",
+                    "price": 109431.92,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1758938400000,
+                    "signal": "BULLISH",
+                    "price": 109408.18,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1758942000000,
+                    "signal": "BULLISH",
+                    "price": 109553.77,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1758956400000,
+                    "signal": "BULLISH",
+                    "price": 109411.2,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1758960000000,
+                    "signal": "BULLISH",
+                    "price": 109252.01,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1758963600000,
+                    "signal": "BULLISH",
+                    "price": 109292.73,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1758967200000,
+                    "signal": "BULLISH",
+                    "price": 109431.7,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1758970800000,
+                    "signal": "BULLISH",
+                    "price": 109310.21,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1758974400000,
+                    "signal": "BULLISH",
+                    "price": 109400.05,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1758992400000,
+                    "signal": "BEARISH",
+                    "price": 109382.47,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1758996000000,
+                    "signal": "BEARISH",
+                    "price": 109434.96,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759003200000,
+                    "signal": "BEARISH",
+                    "price": 109390.0,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759021200000,
+                    "signal": "BULLISH",
+                    "price": 109353.67,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759032000000,
+                    "signal": "BULLISH",
+                    "price": 109365.9,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759035600000,
+                    "signal": "BULLISH",
+                    "price": 109356.43,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759053600000,
+                    "signal": "BEARISH",
+                    "price": 109368.44,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759129200000,
+                    "signal": "BULLISH",
+                    "price": 111865.95,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759132800000,
+                    "signal": "BULLISH",
+                    "price": 112099.75,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759140000000,
+                    "signal": "BEARISH",
+                    "price": 112090.18,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759143600000,
+                    "signal": "BEARISH",
+                    "price": 112100.0,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759147200000,
+                    "signal": "BEARISH",
+                    "price": 112022.16,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759150800000,
+                    "signal": "BEARISH",
+                    "price": 113227.29,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759197600000,
+                    "signal": "BEARISH",
+                    "price": 114455.96,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759201200000,
+                    "signal": "BEARISH",
+                    "price": 114376.39,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759255200000,
+                    "signal": "BEARISH",
+                    "price": 113714.56,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759258800000,
+                    "signal": "BEARISH",
+                    "price": 114359.99,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759291200000,
+                    "signal": "BULLISH",
+                    "price": 114289.01,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759294800000,
+                    "signal": "BULLISH",
+                    "price": 114569.84,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759384800000,
+                    "signal": "BEARISH",
+                    "price": 118649.06,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759388400000,
+                    "signal": "BEARISH",
+                    "price": 118489.76,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759392000000,
+                    "signal": "BEARISH",
+                    "price": 118668.89,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759395600000,
+                    "signal": "BEARISH",
+                    "price": 118849.99,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759399200000,
+                    "signal": "BEARISH",
+                    "price": 118619.56,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759402800000,
+                    "signal": "BEARISH",
+                    "price": 118765.73,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759406400000,
+                    "signal": "BEARISH",
+                    "price": 119402.42,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759410000000,
+                    "signal": "BEARISH",
+                    "price": 119621.2,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759413600000,
+                    "signal": "BEARISH",
+                    "price": 118814.09,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759417200000,
+                    "signal": "BEARISH",
+                    "price": 119910.78,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759420800000,
+                    "signal": "BEARISH",
+                    "price": 119731.4,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759424400000,
+                    "signal": "BEARISH",
+                    "price": 119917.52,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759428000000,
+                    "signal": "BEARISH",
+                    "price": 120506.61,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759442400000,
+                    "signal": "BEARISH",
+                    "price": 120257.49,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759449600000,
+                    "signal": "BEARISH",
+                    "price": 120132.8,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759453200000,
+                    "signal": "BEARISH",
+                    "price": 119875.72,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759456800000,
+                    "signal": "BEARISH",
+                    "price": 120157.82,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759482000000,
+                    "signal": "BEARISH",
+                    "price": 120300.0,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759485600000,
+                    "signal": "BEARISH",
+                    "price": 120425.95,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759489200000,
+                    "signal": "BEARISH",
+                    "price": 120334.5,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759492800000,
+                    "signal": "BEARISH",
+                    "price": 120358.07,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759496400000,
+                    "signal": "BEARISH",
+                    "price": 120374.73,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759500000000,
+                    "signal": "BEARISH",
+                    "price": 120917.85,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759536000000,
+                    "signal": "BULLISH",
+                    "price": 122100.0,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759539600000,
+                    "signal": "BULLISH",
+                    "price": 121865.21,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759554000000,
+                    "signal": "BEARISH",
+                    "price": 122522.7,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759557600000,
+                    "signal": "BEARISH",
+                    "price": 122430.27,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759564800000,
+                    "signal": "BEARISH",
+                    "price": 122267.57,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759568400000,
+                    "signal": "BEARISH",
+                    "price": 122208.78,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759572000000,
+                    "signal": "BEARISH",
+                    "price": 122129.53,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759575600000,
+                    "signal": "BEARISH",
+                    "price": 121973.26,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759611600000,
+                    "signal": "BEARISH",
+                    "price": 122190.67,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759618800000,
+                    "signal": "BEARISH",
+                    "price": 122391.0,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759622400000,
+                    "signal": "BEARISH",
+                    "price": 122157.7,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759626000000,
+                    "signal": "BEARISH",
+                    "price": 122377.72,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759662000000,
+                    "signal": "BULLISH",
+                    "price": 123464.64,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759665600000,
+                    "signal": "BULLISH",
+                    "price": 123085.88,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759701600000,
+                    "signal": "BEARISH",
+                    "price": 123237.4,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759705200000,
+                    "signal": "BEARISH",
+                    "price": 123482.31,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759708800000,
+                    "signal": "BEARISH",
+                    "price": 123347.29,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759712400000,
+                    "signal": "BEARISH",
+                    "price": 124035.32,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759744800000,
+                    "signal": "BULLISH",
+                    "price": 123978.0,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759795200000,
+                    "signal": "BULLISH",
+                    "price": 124900.93,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759834800000,
+                    "signal": "BEARISH",
+                    "price": 124453.38,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759838400000,
+                    "signal": "BEARISH",
+                    "price": 124917.99,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759881600000,
+                    "signal": "BEARISH",
+                    "price": 121914.09,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759885200000,
+                    "signal": "BEARISH",
+                    "price": 121950.01,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759888800000,
+                    "signal": "BEARISH",
+                    "price": 122048.28,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759899600000,
+                    "signal": "BULLISH",
+                    "price": 121374.01,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759903200000,
+                    "signal": "BULLISH",
+                    "price": 121784.29,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759906800000,
+                    "signal": "BULLISH",
+                    "price": 121597.06,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759953600000,
+                    "signal": "BULLISH",
+                    "price": 122856.69,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759971600000,
+                    "signal": "BULLISH",
+                    "price": 122548.23,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760007600000,
+                    "signal": "BEARISH",
+                    "price": 122737.57,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760011200000,
+                    "signal": "BEARISH",
+                    "price": 123563.38,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760050800000,
+                    "signal": "BEARISH",
+                    "price": 121662.4,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760054400000,
+                    "signal": "BEARISH",
+                    "price": 121745.27,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760076000000,
+                    "signal": "BULLISH",
+                    "price": 121378.18,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760079600000,
+                    "signal": "BULLISH",
+                    "price": 120932.05,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760083200000,
+                    "signal": "BULLISH",
+                    "price": 121631.54,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760086800000,
+                    "signal": "BULLISH",
+                    "price": 121314.73,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760090400000,
+                    "signal": "BULLISH",
+                    "price": 121496.33,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760104800000,
+                    "signal": "BULLISH",
+                    "price": 120493.17,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760180400000,
+                    "signal": "BULLISH",
+                    "price": 112280.0,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760187600000,
+                    "signal": "BULLISH",
+                    "price": 112267.86,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760191200000,
+                    "signal": "BULLISH",
+                    "price": 111991.97,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760194800000,
+                    "signal": "BULLISH",
+                    "price": 111793.2,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760209200000,
+                    "signal": "BULLISH",
+                    "price": 111178.31,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760212800000,
+                    "signal": "BULLISH",
+                    "price": 110244.98,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760216400000,
+                    "signal": "BULLISH",
+                    "price": 110893.54,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760220000000,
+                    "signal": "BULLISH",
+                    "price": 111043.27,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760223600000,
+                    "signal": "BULLISH",
+                    "price": 110644.4,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760227200000,
+                    "signal": "BULLISH",
+                    "price": 109641.54,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760230800000,
+                    "signal": "BULLISH",
+                    "price": 109978.56,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760234400000,
+                    "signal": "BULLISH",
+                    "price": 110119.02,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760238000000,
+                    "signal": "BULLISH",
+                    "price": 110676.0,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760245200000,
+                    "signal": "BULLISH",
+                    "price": 111700.38,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760248800000,
+                    "signal": "BULLISH",
+                    "price": 111686.01,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760252400000,
+                    "signal": "BULLISH",
+                    "price": 111525.2,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760256000000,
+                    "signal": "BULLISH",
+                    "price": 111310.9,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760259600000,
+                    "signal": "BULLISH",
+                    "price": 111837.04,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760263200000,
+                    "signal": "BULLISH",
+                    "price": 111651.64,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760266800000,
+                    "signal": "BULLISH",
+                    "price": 111848.36,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760274000000,
+                    "signal": "BULLISH",
+                    "price": 111297.52,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760284800000,
+                    "signal": "BULLISH",
+                    "price": 114069.35,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760288400000,
+                    "signal": "BULLISH",
+                    "price": 113799.99,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760292000000,
+                    "signal": "BULLISH",
+                    "price": 113878.93,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760295600000,
+                    "signal": "BULLISH",
+                    "price": 114342.28,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760299200000,
+                    "signal": "BULLISH",
+                    "price": 114927.97,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760302800000,
+                    "signal": "BULLISH",
+                    "price": 114882.06,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760306400000,
+                    "signal": "BULLISH",
+                    "price": 115221.4,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760331600000,
+                    "signal": "BULLISH",
+                    "price": 114611.82,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760338800000,
+                    "signal": "BEARISH",
+                    "price": 115399.67,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760342400000,
+                    "signal": "BEARISH",
+                    "price": 115254.23,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760360400000,
+                    "signal": "BEARISH",
+                    "price": 115345.79,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760378400000,
+                    "signal": "BEARISH",
+                    "price": 115160.63,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760382000000,
+                    "signal": "BEARISH",
+                    "price": 115792.84,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760385600000,
+                    "signal": "BEARISH",
+                    "price": 115713.37,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760389200000,
+                    "signal": "BEARISH",
+                    "price": 115700.0,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760392800000,
+                    "signal": "BEARISH",
+                    "price": 115507.19,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760396400000,
+                    "signal": "BEARISH",
+                    "price": 115166.0,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760400000000,
+                    "signal": "BEARISH",
+                    "price": 114959.03,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760454000000,
+                    "signal": "BEARISH",
+                    "price": 112900.43,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760457600000,
+                    "signal": "BEARISH",
+                    "price": 112328.83,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760497200000,
+                    "signal": "BULLISH",
+                    "price": 112024.29,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760500800000,
+                    "signal": "BULLISH",
+                    "price": 112344.81,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760504400000,
+                    "signal": "BULLISH",
+                    "price": 112431.95,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760508000000,
+                    "signal": "BULLISH",
+                    "price": 112460.47,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760511600000,
+                    "signal": "BULLISH",
+                    "price": 112584.5,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760515200000,
+                    "signal": "BULLISH",
+                    "price": 112944.85,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760518800000,
+                    "signal": "BULLISH",
+                    "price": 112564.01,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760522400000,
+                    "signal": "BULLISH",
+                    "price": 112266.71,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760526000000,
+                    "signal": "BULLISH",
+                    "price": 111905.73,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760529600000,
+                    "signal": "BULLISH",
+                    "price": 111711.25,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760576400000,
+                    "signal": "BEARISH",
+                    "price": 111299.99,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760583600000,
+                    "signal": "BULLISH",
+                    "price": 111329.48,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760587200000,
+                    "signal": "BULLISH",
+                    "price": 110966.03,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760590800000,
+                    "signal": "BULLISH",
+                    "price": 110951.14,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760598000000,
+                    "signal": "BULLISH",
+                    "price": 110584.2,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760612400000,
+                    "signal": "BULLISH",
+                    "price": 111404.72,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760619600000,
+                    "signal": "BULLISH",
+                    "price": 110860.0,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760623200000,
+                    "signal": "BULLISH",
+                    "price": 110529.34,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760659200000,
+                    "signal": "BEARISH",
+                    "price": 108800.0,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760666400000,
+                    "signal": "BEARISH",
+                    "price": 108972.97,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760680800000,
+                    "signal": "BULLISH",
+                    "price": 106741.28,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760684400000,
+                    "signal": "BULLISH",
+                    "price": 105633.75,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760713200000,
+                    "signal": "BEARISH",
+                    "price": 106803.53,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760716800000,
+                    "signal": "BEARISH",
+                    "price": 106372.34,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760763600000,
+                    "signal": "BULLISH",
+                    "price": 106812.52,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760767200000,
+                    "signal": "BULLISH",
+                    "price": 106839.96,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760770800000,
+                    "signal": "BULLISH",
+                    "price": 106665.0,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760781600000,
+                    "signal": "BULLISH",
+                    "price": 106924.47,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760788800000,
+                    "signal": "BULLISH",
+                    "price": 107065.17,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760803200000,
+                    "signal": "BULLISH",
+                    "price": 106664.01,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760810400000,
+                    "signal": "BULLISH",
+                    "price": 106843.75,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760817600000,
+                    "signal": "BULLISH",
+                    "price": 107018.51,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760832000000,
+                    "signal": "BULLISH",
+                    "price": 106898.03,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760839200000,
+                    "signal": "BULLISH",
+                    "price": 106847.02,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760864400000,
+                    "signal": "BEARISH",
+                    "price": 107401.47,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760868000000,
+                    "signal": "BEARISH",
+                    "price": 107882.71,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760918400000,
+                    "signal": "BULLISH",
+                    "price": 108047.46,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                }
+            ],
+            "metrics": {
+                "total_signals": 200,
+                "signal_frequency": 0.27739251040221913,
+                "patterns": {},
+                "win_rate": 0,
+                "avg_profit": 0,
+                "max_drawdown": 0,
+                "profit_factor": 0
+            },
+            "params": {
+                "fast_periods": 12,
+                "slow_periods": 26,
+                "signal_periods": 9
+            }
+        },
+        "4h": {
+            "signals": [
+                {
+                    "timestamp": 1759046400000,
+                    "signal": "BULLISH",
+                    "price": 109369.02,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759089600000,
+                    "signal": "BULLISH",
+                    "price": 112163.95,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759104000000,
+                    "signal": "BULLISH",
+                    "price": 111857.51,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759320000000,
+                    "signal": "BULLISH",
+                    "price": 117423.73,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759550400000,
+                    "signal": "BEARISH",
+                    "price": 122324.08,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759564800000,
+                    "signal": "BEARISH",
+                    "price": 121973.26,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759579200000,
+                    "signal": "BEARISH",
+                    "price": 121791.31,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759593600000,
+                    "signal": "BEARISH",
+                    "price": 121959.25,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759608000000,
+                    "signal": "BEARISH",
+                    "price": 122391.0,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759622400000,
+                    "signal": "BEARISH",
+                    "price": 123776.22,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759636800000,
+                    "signal": "BEARISH",
+                    "price": 124713.63,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759651200000,
+                    "signal": "BEARISH",
+                    "price": 123464.64,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759665600000,
+                    "signal": "BEARISH",
+                    "price": 122803.17,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759680000000,
+                    "signal": "BEARISH",
+                    "price": 122591.79,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759694400000,
+                    "signal": "BEARISH",
+                    "price": 123482.31,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759708800000,
+                    "signal": "BEARISH",
+                    "price": 123839.09,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759723200000,
+                    "signal": "BEARISH",
+                    "price": 123390.47,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759737600000,
+                    "signal": "BEARISH",
+                    "price": 124215.0,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759752000000,
+                    "signal": "BEARISH",
+                    "price": 125000.0,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759766400000,
+                    "signal": "BEARISH",
+                    "price": 125410.81,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759780800000,
+                    "signal": "BEARISH",
+                    "price": 124658.54,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759795200000,
+                    "signal": "BEARISH",
+                    "price": 124329.74,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759809600000,
+                    "signal": "BEARISH",
+                    "price": 123667.99,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759824000000,
+                    "signal": "BEARISH",
+                    "price": 124453.38,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759968000000,
+                    "signal": "BEARISH",
+                    "price": 122038.01,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759982400000,
+                    "signal": "BEARISH",
+                    "price": 121906.1,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1759996800000,
+                    "signal": "BEARISH",
+                    "price": 122737.57,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760270400000,
+                    "signal": "BEARISH",
+                    "price": 113198.2,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760299200000,
+                    "signal": "BULLISH",
+                    "price": 114958.8,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760313600000,
+                    "signal": "BULLISH",
+                    "price": 114821.12,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760414400000,
+                    "signal": "BEARISH",
+                    "price": 111724.41,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760428800000,
+                    "signal": "BULLISH",
+                    "price": 111313.98,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760443200000,
+                    "signal": "BULLISH",
+                    "price": 112900.43,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760457600000,
+                    "signal": "BULLISH",
+                    "price": 112613.7,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760472000000,
+                    "signal": "BULLISH",
+                    "price": 113028.14,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760486400000,
+                    "signal": "BULLISH",
+                    "price": 112024.29,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760500800000,
+                    "signal": "BULLISH",
+                    "price": 112584.5,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760515200000,
+                    "signal": "BULLISH",
+                    "price": 111905.73,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760544000000,
+                    "signal": "BULLISH",
+                    "price": 111271.73,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760558400000,
+                    "signal": "BULLISH",
+                    "price": 110763.28,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760572800000,
+                    "signal": "BULLISH",
+                    "price": 111329.48,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760587200000,
+                    "signal": "BULLISH",
+                    "price": 110584.2,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760601600000,
+                    "signal": "BULLISH",
+                    "price": 111404.72,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760616000000,
+                    "signal": "BULLISH",
+                    "price": 108549.21,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                },
+                {
+                    "timestamp": 1760889600000,
+                    "signal": "BULLISH",
+                    "price": 108908.43,
+                    "params": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    }
+                }
+            ],
+            "metrics": {
+                "total_signals": 45,
+                "signal_frequency": 0.24861878453038674,
+                "patterns": {},
+                "win_rate": 0,
+                "avg_profit": 0,
+                "max_drawdown": 0,
+                "profit_factor": 0
+            },
+            "params": {
+                "fast_periods": 12,
+                "slow_periods": 26,
+                "signal_periods": 9
+            }
+        },
+        "1d": {
+            "signals": [],
+            "metrics": {},
+            "params": {
+                "fast_periods": 12,
+                "slow_periods": 26,
+                "signal_periods": 9
+            }
+        }
+    },
+    "best_params": {},
+    "overall_metrics": {}
+}

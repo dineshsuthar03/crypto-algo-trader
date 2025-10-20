@@ -1,0 +1,66 @@
+{
+    "timestamp": "2025-10-20T16:52:26.648159",
+    "strategies": {
+        "candlestick": {
+            "metrics": {
+                "timeframes": {
+                    "1h": {
+                        "total_signals": 252,
+                        "signal_distribution": {
+                            "BEARISH": 95,
+                            "true": 86,
+                            "BULLISH": 71
+                        },
+                        "accuracy": 0.5,
+                        "patterns": {
+                            "engulfing": 166,
+                            "doji": 61,
+                            "hammer": 23,
+                            "three_black_crows": 1,
+                            "morning_star": 1
+                        },
+                        "best_params": null,
+                        "risk_metrics": {
+                            "max_consecutive_signals": 107,
+                            "signal_clustering": 8779.409158894628,
+                            "volatility_correlation": 0
+                        }
+                    },
+                    "4h": {
+                        "total_signals": 46,
+                        "signal_distribution": {
+                            "BULLISH": 17,
+                            "BEARISH": 15,
+                            "true": 14
+                        },
+                        "accuracy": 0.5,
+                        "patterns": {
+                            "engulfing": 32,
+                            "doji": 11,
+                            "hammer": 3
+                        },
+                        "best_params": null,
+                        "risk_metrics": {
+                            "max_consecutive_signals": 4,
+                            "signal_clustering": 43952.238540571205,
+                            "volatility_correlation": 0
+                        }
+                    }
+                },
+                "overall": {
+                    "total_signals": 298,
+                    "accuracy": 0.5,
+                    "profit_potential": 0,
+                    "risk_metrics": {}
+                }
+            },
+            "best_parameters": {
+                "1h": {
+                    "parameters": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    },
+                    "metrics": {
+                        "count": 252,
+                        "patterns": 

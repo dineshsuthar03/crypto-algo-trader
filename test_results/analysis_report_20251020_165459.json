@@ -1,0 +1,255 @@
+{
+    "timestamp": "2025-10-20T16:54:59.942567",
+    "strategies": {
+        "candlestick": {
+            "metrics": {
+                "timeframes": {
+                    "1h": {
+                        "total_signals": 252,
+                        "signal_distribution": {
+                            "BEARISH": 95,
+                            "true": 86,
+                            "BULLISH": 71
+                        },
+                        "accuracy": 0.5,
+                        "patterns": {
+                            "engulfing": 166,
+                            "doji": 61,
+                            "hammer": 23,
+                            "three_black_crows": 1,
+                            "morning_star": 1
+                        },
+                        "best_params": null,
+                        "risk_metrics": {
+                            "max_consecutive_signals": 107,
+                            "signal_clustering": 8779.409158894628,
+                            "volatility_correlation": 0
+                        }
+                    },
+                    "4h": {
+                        "total_signals": 46,
+                        "signal_distribution": {
+                            "BULLISH": 17,
+                            "BEARISH": 15,
+                            "true": 14
+                        },
+                        "accuracy": 0.5,
+                        "patterns": {
+                            "engulfing": 32,
+                            "doji": 11,
+                            "hammer": 3
+                        },
+                        "best_params": null,
+                        "risk_metrics": {
+                            "max_consecutive_signals": 4,
+                            "signal_clustering": 43952.238540571205,
+                            "volatility_correlation": 0
+                        }
+                    }
+                },
+                "overall": {
+                    "total_signals": 298,
+                    "accuracy": 0.5,
+                    "profit_potential": 0,
+                    "risk_metrics": {}
+                }
+            },
+            "best_parameters": {
+                "1h": {
+                    "parameters": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    },
+                    "metrics": {
+                        "count": 252,
+                        "patterns": [
+                            "doji",
+                            "engulfing",
+                            "hammer",
+                            "morning_star",
+                            "three_black_crows"
+                        ],
+                        "accuracy": 0
+                    }
+                },
+                "4h": {
+                    "parameters": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    },
+                    "metrics": {
+                        "count": 46,
+                        "patterns": [
+                            "hammer",
+                            "doji",
+                            "engulfing"
+                        ],
+                        "accuracy": 0
+                    }
+                }
+            }
+        },
+        "chart": {
+            "metrics": {
+                "timeframes": {
+                    "1h": {
+                        "total_signals": 516,
+                        "signal_distribution": {
+                            "true": 371,
+                            "falling": 92,
+                            "rising": 53
+                        },
+                        "accuracy": 0.5,
+                        "patterns": {
+                            "descending_triangle": 192,
+                            "wedge": 145,
+                            "ascending_triangle": 134,
+                            "bullish_flag": 24,
+                            "bearish_flag": 21
+                        },
+                        "best_params": null,
+                        "risk_metrics": {
+                            "max_consecutive_signals": 488,
+                            "signal_clustering": 10827.671851803896,
+                            "volatility_correlation": 0
+                        }
+                    },
+                    "4h": {
+                        "total_signals": 44,
+                        "signal_distribution": {
+                            "true": 21,
+                            "falling": 16,
+                            "rising": 7
+                        },
+                        "accuracy": 0.5,
+                        "patterns": {
+                            "wedge": 23,
+                            "descending_triangle": 10,
+                            "ascending_triangle": 8,
+                            "bullish_flag": 3
+                        },
+                        "best_params": null,
+                        "risk_metrics": {
+                            "max_consecutive_signals": 7,
+                            "signal_clustering": 89726.01485000762,
+                            "volatility_correlation": 0
+                        }
+                    }
+                },
+                "overall": {
+                    "total_signals": 560,
+                    "accuracy": 0.5,
+                    "profit_potential": 0,
+                    "risk_metrics": {}
+                }
+            },
+            "best_parameters": {
+                "1h": {
+                    "parameters": {
+                        "tolerances": 0.02,
+                        "min_swings": 3,
+                        "trend_strengths": 0.1
+                    },
+                    "metrics": {
+                        "count": 516,
+                        "patterns": [
+                            "wedge",
+                            "descending_triangle",
+                            "ascending_triangle",
+                            "bullish_flag",
+                            "bearish_flag"
+                        ],
+                        "accuracy": 0
+                    }
+                },
+                "4h": {
+                    "parameters": {
+                        "tolerances": 0.02,
+                        "min_swings": 3,
+                        "trend_strengths": 0.1
+                    },
+                    "metrics": {
+                        "count": 44,
+                        "patterns": [
+                            "wedge",
+                            "ascending_triangle",
+                            "descending_triangle",
+                            "bullish_flag"
+                        ],
+                        "accuracy": 0
+                    }
+                }
+            }
+        },
+        "macd": {
+            "metrics": {
+                "timeframes": {
+                    "1h": {
+                        "total_signals": 200,
+                        "signal_distribution": {
+                            "BULLISH": 118,
+                            "BEARISH": 82
+                        },
+                        "accuracy": 0.5,
+                        "patterns": {},
+                        "best_params": null,
+                        "risk_metrics": {
+                            "max_consecutive_signals": 121,
+                            "signal_clustering": 16005.723051378896,
+                            "volatility_correlation": 0
+                        }
+                    },
+                    "4h": {
+                        "total_signals": 45,
+                        "signal_distribution": {
+                            "BEARISH": 25,
+                            "BULLISH": 20
+                        },
+                        "accuracy": 0.5,
+                        "patterns": {},
+                        "best_params": null,
+                        "risk_metrics": {
+                            "max_consecutive_signals": 0,
+                            "signal_clustering": 70532.87479651818,
+                            "volatility_correlation": 0
+                        }
+                    }
+                },
+                "overall": {
+                    "total_signals": 245,
+                    "accuracy": 0.5,
+                    "profit_potential": 0,
+                    "risk_metrics": {}
+                }
+            },
+            "best_parameters": {
+                "1h": {
+                    "parameters": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    },
+                    "metrics": {
+                        "count": 200,
+                        "patterns": [],
+                        "accuracy": 0
+                    }
+                },
+                "4h": {
+                    "parameters": {
+                        "fast_periods": 12,
+                        "slow_periods": 26,
+                        "signal_periods": 9
+                    },
+                    "metrics": {
+                        "count": 45,
+                        "patterns": [],
+                        "accuracy": 0
+                    }
+                }
+            }
+        }
+    }
+}

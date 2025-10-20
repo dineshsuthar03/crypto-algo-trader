@@ -1,0 +1,3339 @@
+{
+    "timeframes": {
+        "1h": {
+            "signals": [
+                {
+                    "timestamp": 1758510000000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 114649.89,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758528000000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 112629.07,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758546000000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 113130.63,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758553200000,
+                    "pattern": "hammer",
+                    "signal": true,
+                    "price": 112815.5,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758560400000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 112398.66,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758564000000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 112429.13,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758574800000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 112969.99,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758582000000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 112650.99,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758600000000,
+                    "pattern": "hammer",
+                    "signal": true,
+                    "price": 112442.3,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758603600000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 112665.44,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758621600000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 112969.32,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758625200000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 112975.99,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758632400000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 112952.31,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758636000000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 112652.91,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758664800000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 112159.23,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758664800000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 112159.23,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758668400000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 111998.8,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758697200000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 112583.54,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758697200000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 112583.54,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758700800000,
+                    "pattern": "hammer",
+                    "signal": true,
+                    "price": 112622.8,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758708000000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 112941.98,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758715200000,
+                    "pattern": "hammer",
+                    "signal": true,
+                    "price": 113070.69,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758715200000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 113070.69,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758729600000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 113732.01,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758733200000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 113761.3,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758736800000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 113639.8,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758751200000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 113336.33,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758754800000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 113307.0,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758758400000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 113062.35,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758772800000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 111735.66,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758776400000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 111749.91,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758776400000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 111749.91,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758805200000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 111000.0,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758812400000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 111580.77,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758812400000,
+                    "pattern": "hammer",
+                    "signal": true,
+                    "price": 111580.77,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758837600000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 109419.97,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758848400000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 109680.4,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758852000000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 109621.7,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758855600000,
+                    "pattern": "hammer",
+                    "signal": true,
+                    "price": 109580.01,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758862800000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 109252.79,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758870000000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 109320.02,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758877200000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 109568.72,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758906000000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 109899.99,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758916800000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 109288.44,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758927600000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 109643.46,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758931200000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 109649.29,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758952800000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 109541.36,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758974400000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 109400.05,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758978000000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 109306.61,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758992400000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 109382.47,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758992400000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 109382.47,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1758999600000,
+                    "pattern": "hammer",
+                    "signal": true,
+                    "price": 109424.2,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759003200000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 109390.0,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759010400000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 109605.62,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759024800000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 109447.55,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759028400000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 109436.0,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759028400000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 109436.0,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759046400000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 109509.91,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759050000000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 109519.42,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759053600000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 109368.44,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759057200000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 109369.02,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759071600000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 110037.93,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759075200000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 110222.02,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759078800000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 110203.52,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759078800000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 110203.52,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759122000000,
+                    "pattern": "hammer",
+                    "signal": true,
+                    "price": 111753.34,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759122000000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 111753.34,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759136400000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 112110.9,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759136400000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 112110.9,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759140000000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 112090.18,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759143600000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 112100.0,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759143600000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 112100.0,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759150800000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 113227.29,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759172400000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 114265.55,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759176000000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 114258.29,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759183200000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 114189.81,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759186800000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 114311.96,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759194000000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 114500.31,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759197600000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 114455.96,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759212000000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 113891.64,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759219200000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 113451.89,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759233600000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 113002.06,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759240800000,
+                    "pattern": "hammer",
+                    "signal": true,
+                    "price": 113595.05,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759251600000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 113246.11,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759258800000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 114359.99,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759273200000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 114048.93,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759287600000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 114176.92,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759302000000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 114539.02,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759309200000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 116412.1,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759320000000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 116402.65,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759330800000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 117423.73,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759341600000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 117234.01,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759348800000,
+                    "pattern": "hammer",
+                    "signal": true,
+                    "price": 117536.12,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759352400000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 117554.96,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759356000000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 117745.39,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759374000000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 118733.99,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759406400000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 119402.42,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759410000000,
+                    "pattern": "hammer",
+                    "signal": true,
+                    "price": 119621.2,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759431600000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 120836.49,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759471200000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 119916.93,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759471200000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 119916.93,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759474800000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 119640.21,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759489200000,
+                    "pattern": "hammer",
+                    "signal": true,
+                    "price": 120334.5,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759492800000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 120358.07,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759492800000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 120358.07,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759496400000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 120374.73,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759500000000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 120917.85,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759503600000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 122258.05,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759507200000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 122553.3,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759514400000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 122538.46,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759521600000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 122447.94,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759536000000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 122100.0,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759543200000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 121854.53,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759543200000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 121854.53,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759554000000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 122522.7,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759568400000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 122208.78,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759572000000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 122129.53,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759597200000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 121747.37,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759626000000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 122377.72,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759629600000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 124031.44,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759640400000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 125127.99,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759654800000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 123020.5,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759658400000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 123028.01,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759658400000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 123028.01,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759669200000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 123161.39,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759672800000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 123034.67,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759694400000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 122705.32,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759698000000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 122729.99,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759698000000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 122729.99,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759716000000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 124110.61,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759726800000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 123586.0,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759726800000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 123586.0,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759734000000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 123390.47,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759744800000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 123978.0,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759744800000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 123978.0,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759759200000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 124530.0,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759784400000,
+                    "pattern": "hammer",
+                    "signal": true,
+                    "price": 125097.85,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759784400000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 125097.85,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759788000000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 125039.13,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759806000000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 124329.74,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759813200000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 124414.17,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759824000000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 123861.75,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759834800000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 124453.38,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759838400000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 124917.99,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759842000000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 123891.68,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759874400000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 122011.17,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759881600000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 121914.09,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759885200000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 121950.01,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759888800000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 122048.28,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759896000000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 121900.0,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759899600000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 121374.01,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759903200000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 121784.29,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759910400000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 122381.85,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759914000000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 122516.98,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759928400000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 122599.04,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759942800000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 124033.19,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759950000000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 123450.0,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759953600000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 122856.69,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759957200000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 123277.33,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759968000000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 122839.15,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759971600000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 122548.23,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760007600000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 122737.57,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760011200000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 123563.38,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760022000000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 121147.14,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760025600000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 119819.77,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760032800000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 120649.32,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760036400000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 120951.72,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760043600000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 121461.02,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760050800000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 121662.4,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760065200000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 121026.01,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760068800000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 121234.51,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760079600000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 120932.05,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760101200000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 121684.2,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760112000000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 118205.61,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760119200000,
+                    "pattern": "three_black_crows",
+                    "signal": true,
+                    "price": 117237.7,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760130000000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 113451.86,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760133600000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 113700.0,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760133600000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 113700.0,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760133600000,
+                    "pattern": "morning_star",
+                    "signal": true,
+                    "price": 113700.0,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760166000000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 110384.61,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760180400000,
+                    "pattern": "hammer",
+                    "signal": true,
+                    "price": 112280.0,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760180400000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 112280.0,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760184000000,
+                    "pattern": "hammer",
+                    "signal": true,
+                    "price": 112380.14,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760198400000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 111846.18,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760198400000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 111846.18,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760205600000,
+                    "pattern": "hammer",
+                    "signal": true,
+                    "price": 111955.27,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760205600000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 111955.27,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760248800000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 111686.01,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760252400000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 111525.2,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760270400000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 111789.6,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760270400000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 111789.6,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760274000000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 111297.52,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760277600000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 112338.1,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760302800000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 114882.06,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760317200000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 115713.32,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760320800000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 115319.97,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760324400000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 114821.12,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760328000000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 114708.15,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760342400000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 115254.23,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760346000000,
+                    "pattern": "hammer",
+                    "signal": true,
+                    "price": 115127.04,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760349600000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 114810.62,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760360400000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 115345.79,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760371200000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 114669.24,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760385600000,
+                    "pattern": "hammer",
+                    "signal": true,
+                    "price": 115713.37,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760389200000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 115700.0,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760396400000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 115166.0,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760425200000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 111724.41,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760436000000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 110623.58,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760446800000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 111014.38,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760454000000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 112900.43,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760472000000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 112992.87,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760475600000,
+                    "pattern": "hammer",
+                    "signal": true,
+                    "price": 113128.7,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760486400000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 112993.86,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760493600000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 112809.94,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760500800000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 112344.81,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760508000000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 112460.47,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760515200000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 112944.85,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760533200000,
+                    "pattern": "hammer",
+                    "signal": true,
+                    "price": 111389.0,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760536800000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 111059.76,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760540400000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 110798.01,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760544000000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 110748.0,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760551200000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 111444.76,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760562000000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 110854.19,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760565600000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 110667.97,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760590800000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 110951.14,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760594400000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 111666.83,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760601600000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 110817.5,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760619600000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 110860.0,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760626800000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 108549.21,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760644800000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 107838.01,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760648400000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 108443.7,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760652000000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 107798.85,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760659200000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 108800.0,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760662800000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 108839.84,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760662800000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 108839.84,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760666400000,
+                    "pattern": "hammer",
+                    "signal": true,
+                    "price": 108972.97,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760695200000,
+                    "pattern": "hammer",
+                    "signal": true,
+                    "price": 104751.99,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760702400000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 105350.4,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760713200000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 106803.53,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760716800000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 106372.34,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760724000000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 106647.11,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760738400000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 107000.1,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760760000000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 106478.71,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760770800000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 106665.0,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760774400000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 106719.2,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760821200000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 107177.05,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760835600000,
+                    "pattern": "hammer",
+                    "signal": true,
+                    "price": 106973.26,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760839200000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 106847.02,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760853600000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 106777.75,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760857200000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 106786.0,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760882400000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 108405.47,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760907600000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 108744.82,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                }
+            ],
+            "metrics": {
+                "total_signals": 252,
+                "signal_frequency": 0.34951456310679613,
+                "patterns": {
+                    "engulfing": 166,
+                    "doji": 61,
+                    "hammer": 23,
+                    "three_black_crows": 1,
+                    "morning_star": 1
+                },
+                "win_rate": 0,
+                "avg_profit": 0,
+                "max_drawdown": 0,
+                "profit_factor": 0
+            },
+            "params": {
+                "doji_sizes": 0.1,
+                "body_sizes": 0.3,
+                "shadow_lengths": 1.5
+            }
+        },
+        "4h": {
+            "signals": [
+                {
+                    "timestamp": 1759075200000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 110337.6,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759118400000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 111865.95,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759190400000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 114376.39,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759219200000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 113055.01,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759233600000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 113106.16,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759248000000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 114359.99,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759276800000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 114176.92,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759320000000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 117423.73,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759334400000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 117439.53,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759406400000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 119910.78,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759507200000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 122660.99,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759521600000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 122232.0,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759536000000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 122243.99,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759536000000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 122243.99,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759622400000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 123776.22,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759867200000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 121332.95,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759881600000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 121374.75,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759881600000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 121374.75,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759910400000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 122884.14,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759968000000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 122038.01,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1759996800000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 122737.57,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760025600000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 120951.72,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760112000000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 116661.5,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760126400000,
+                    "pattern": "hammer",
+                    "signal": true,
+                    "price": 112774.5,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760198400000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 111178.31,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760212800000,
+                    "pattern": "hammer",
+                    "signal": true,
+                    "price": 110644.4,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760227200000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 110676.0,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760256000000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 111848.36,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760270400000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 113198.2,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760356800000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 114312.1,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760371200000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 115792.84,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760472000000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 113028.14,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760500800000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 112584.5,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760616000000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 108549.21,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760644800000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 108194.28,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760644800000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 108194.28,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760659200000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 109176.74,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760688000000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 105683.72,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760702400000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 106803.53,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760716800000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 106454.72,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760731200000,
+                    "pattern": "doji",
+                    "signal": true,
+                    "price": 106431.68,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760731200000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 106431.68,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760803200000,
+                    "pattern": "hammer",
+                    "signal": true,
+                    "price": 107080.14,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760832000000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 107275.78,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760846400000,
+                    "pattern": "engulfing",
+                    "signal": "BEARISH",
+                    "price": 106786.0,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                },
+                {
+                    "timestamp": 1760918400000,
+                    "pattern": "engulfing",
+                    "signal": "BULLISH",
+                    "price": 110145.44,
+                    "params": {
+                        "doji_sizes": 0.1,
+                        "body_sizes": 0.3,
+                        "shadow_lengths": 1.5
+                    }
+                }
+            ],
+            "metrics": {
+                "total_signals": 46,
+                "signal_frequency": 0.2541436464088398,
+                "patterns": {
+                    "engulfing": 32,
+                    "doji": 11,
+                    "hammer": 3
+                },
+                "win_rate": 0,
+                "avg_profit": 0,
+                "max_drawdown": 0,
+                "profit_factor": 0
+            },
+            "params": {
+                "doji_sizes": 0.1,
+                "body_sizes": 0.3,
+                "shadow_lengths": 1.5
+            }
+        },
+        "1d": {
+            "signals": [],
+            "metrics": {},
+            "params": {
+                "doji_sizes": 0.1,
+                "body_sizes": 0.3,
+                "shadow_lengths": 1.5
+            }
+        }
+    },
+    "best_params": {},
+    "overall_metrics": {}
+}
