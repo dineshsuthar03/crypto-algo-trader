@@ -2,6 +2,11 @@ from strategy.breakout_strategy import BreakoutStrategy
 from strategy.momentum_strategy import MomentumStrategy
 from strategy.price_action_strategy import PriceActionStrategy
 from strategy.rsi_strategy import RSIStrategy
+from strategy.macd_strategy import MACDStrategy
+from strategy.combined_strategy import CombinedStrategy
+from strategy.candlestick_patterns import CandlestickPatternStrategy
+from strategy.chart_patterns import ChartPatternStrategy
+from strategy.reversal_strategy import ReversalStrategy
 from data_feed import candle_store
 from core.config import SYMBOLS
 from core.logger import get_logger
@@ -46,6 +51,21 @@ class StrategyEngine:
             elif strategy_type == "rsi":
                 self.strategies[sym] = [RSIStrategy()]
                 logger.info(f"Loaded RSIStrategy for {sym}")
+            elif strategy_type == "macd":
+                self.strategies[sym] = [MACDStrategy()]
+                logger.info(f"Loaded MACDStrategy for {sym}")
+            elif strategy_type == "combined":
+                self.strategies[sym] = [CombinedStrategy()]
+                logger.info(f"Loaded CombinedStrategy for {sym}")
+            elif strategy_type == "candlestick":
+                self.strategies[sym] = [CandlestickPatternStrategy()]
+                logger.info(f"Loaded CandlestickPatternStrategy for {sym}")
+            elif strategy_type == "chart":
+                self.strategies[sym] = [ChartPatternStrategy()]
+                logger.info(f"Loaded ChartPatternStrategy for {sym}")
+            elif strategy_type == "reversal":
+                self.strategies[sym] = [ReversalStrategy()]
+                logger.info(f"Loaded ReversalStrategy for {sym}")
             else:
                 # Default to price action
                 self.strategies[sym] = [PriceActionStrategy()]
