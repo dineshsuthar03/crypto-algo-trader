@@ -3,6 +3,7 @@ import time
 import signal
 import sys
 from datetime import datetime
+import os
 
 from data_feed import live_feed, candle_store
 from strategy.strategy_engine import StrategyEngine
@@ -10,6 +11,8 @@ from trading import order_manager
 from trading.position_tracker import tracker
 from core.config import SYMBOLS, MARKET_TYPES
 from core.logger import get_logger
+from dotenv import load_dotenv
+load_dotenv()
 
 logger = get_logger()
 
@@ -143,7 +146,8 @@ def main():
 
 if __name__ == "__main__":
     # Initialize strategy engine
-    engine = StrategyEngine()
+    strategy_type = os.getenv("STRATEGY_TYPE", "price_action")
+    engine = StrategyEngine(strategy_type=strategy_type)
     
     # Import timedelta here to avoid issues
     from datetime import timedelta

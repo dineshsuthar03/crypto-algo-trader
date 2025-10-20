@@ -38,11 +38,7 @@ class Position:
         from trading.trade_manager import TradeManager
         self.trade_manager = TradeManager(
             initial_price=entry_price,
-            side=side,
-            atr_period=14,
-            trailing_stop_multiplier=2.0,
-            min_profit_multiplier=1.5,
-            max_profit_multiplier=3.0
+            side=side
         )
         self.current_stop = None
         self.current_target = None

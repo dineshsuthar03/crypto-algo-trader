@@ -1,6 +1,7 @@
 from strategy.breakout_strategy import BreakoutStrategy
 from strategy.momentum_strategy import MomentumStrategy
 from strategy.price_action_strategy import PriceActionStrategy
+from strategy.rsi_strategy import RSIStrategy
 from data_feed import candle_store
 from core.config import SYMBOLS
 from core.logger import get_logger
@@ -42,6 +43,9 @@ class StrategyEngine:
             elif strategy_type == "price_action":
                 self.strategies[sym] = [PriceActionStrategy()]
                 logger.info(f"Loaded PriceActionStrategy for {sym}")
+            elif strategy_type == "rsi":
+                self.strategies[sym] = [RSIStrategy()]
+                logger.info(f"Loaded RSIStrategy for {sym}")
             else:
                 # Default to price action
                 self.strategies[sym] = [PriceActionStrategy()]

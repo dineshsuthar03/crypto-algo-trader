@@ -49,6 +49,20 @@ FUTURES_COMMISSION_RATE = float(os.getenv("FUTURES_COMMISSION_RATE", "0.0004")) 
 # Position Management
 MAX_POSITIONS_PER_SYMBOL = int(os.getenv("MAX_POSITIONS_PER_SYMBOL", "1"))
 
+# Strategy Configuration
+COMBINED_STRATEGY_WEIGHTS = {
+    'macd': float(os.getenv("MACD_WEIGHT", "1.0")),
+    'rsi': float(os.getenv("RSI_WEIGHT", "1.0")),
+    'momentum': float(os.getenv("MOMENTUM_WEIGHT", "1.0")),
+    'candlestick': float(os.getenv("CANDLESTICK_WEIGHT", "1.5")),
+    'chart': float(os.getenv("CHART_PATTERN_WEIGHT", "1.5"))
+}
+
+TREND_CONFIRMATION_REQUIRED = os.getenv("TREND_CONFIRMATION_REQUIRED", "true").lower() == "true"
+MIN_PATTERN_CONFIDENCE = float(os.getenv("MIN_PATTERN_CONFIDENCE", "0.6"))
+VOLATILITY_FILTER_ENABLED = os.getenv("VOLATILITY_FILTER_ENABLED", "true").lower() == "true"
+VOLUME_FILTER_ENABLED = os.getenv("VOLUME_FILTER_ENABLED", "true").lower() == "true"
+
 # Advanced Trade Management
 ENABLE_TRAILING_STOP = os.getenv("ENABLE_TRAILING_STOP", "true").lower() == "true"
 ENABLE_DYNAMIC_TARGETS = os.getenv("ENABLE_DYNAMIC_TARGETS", "true").lower() == "true"
